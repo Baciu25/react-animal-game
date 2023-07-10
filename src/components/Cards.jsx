@@ -7,7 +7,7 @@ import ParticlesBackground from "./ParticlesBackground";
 
 const Cards = () => {
   const [youWin, setYouWin] = useState(false);
-  const [cards, setCards] = useState(initialCards);
+  const [cards, setCards] = useState(initialCards.sort((a, b) => 0.5 - Math.random()));
 
   function handleFlippedCard(index) {
     if (
